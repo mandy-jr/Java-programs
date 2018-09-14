@@ -2,24 +2,24 @@ import java.util.*;
 abstract class volume
 {
 	float r, vol;
-	void accept_rad(float rad)
+	void accept_rad(float rad)         //accepting radius method
 	{
 		r=rad;
 	}
-	abstract void cal_volume();
+	abstract void cal_volume();		//abstract method
 	void display()
 	{
 		System.out.print("\nVolume is: "+vol);
 	}
 }
-class sphere extends volume
+class sphere extends volume		//inheritance from volume
 {
 	void cal_volume()
 	{
 		vol=(4/3)*3.14f*r*r*r;
 	}
 }
-class hemisphere extends volume
+class hemisphere extends volume		//inheritance from volume
 {
 	void cal_volume()
 	{
